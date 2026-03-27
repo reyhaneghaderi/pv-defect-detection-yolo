@@ -31,4 +31,10 @@ A pre-trained YOLOv11n model (yolo11n.pt) was fine-tuned on a custom dataset of 
 - Image size: 416 × 416
 - Dataset configuration: defined in data.yaml
 
+ # Model Inference & Evaluation
+- Object Detection
+The trained YOLOv11 model was loaded from Google Drive and used to run inference on the test images using predict(). Since no labels are available, the model directly generated bounding boxes and defect classes, and the results were saved automatically.
+- Visual Evaluation
+Predictions were compared with the original images by displaying them side by side, allowing a quick visual check of detection accuracy and localization.
+
 
