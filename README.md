@@ -20,3 +20,15 @@ correctness
 
 # Conversion to YOLO Format
 The original CSV annotations were converted into YOLO format for object detection training. Bounding boxes were transformed from (xmin, ymin, xmax, ymax) into normalized YOLO format (class_id, x_center, y_center, width, height). Class labels were mapped to numeric IDs (hotspot = 0, diode = 1), and images were organized into the folder structure required by YOLO. Invalid bounding boxes were removed, coordinates were clamped to image boundaries, and the dataset was split into training and validation sets. Finally, the data.yaml file was created to define dataset paths and class names for training.
+
+# model training
+The YOLOv11 model from the Ultralytics framework was used because it is fast and works well for object detection tasks. In this project, the lightweight YOLOv11 nano (yolo11n) version was chosen, since it allows faster training and inference while still giving good results.
+A pre-trained YOLOv11n model (yolo11n.pt) was fine-tuned on a custom dataset of photovoltaic (PV) module defects.
+- Training Process
+Model: YOLOv11n (yolo11n.pt)
+Number of epochs: 50
+Batch size: 8
+Image size: 416 × 416
+Dataset configuration: defined in data.yaml
+
+
