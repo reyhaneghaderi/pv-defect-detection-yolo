@@ -24,11 +24,11 @@ The original CSV annotations were converted into YOLO format for object detectio
 # model training
 The YOLOv11 model from the Ultralytics framework was used because it is fast and works well for object detection tasks. In this project, the lightweight YOLOv11 nano (yolo11n) version was chosen, since it allows faster training and inference while still giving good results.
 A pre-trained YOLOv11n model (yolo11n.pt) was fine-tuned on a custom dataset of photovoltaic (PV) module defects.
-- Training Process
-Model: YOLOv11n (yolo11n.pt)
-Number of epochs: 50
-Batch size: 8
-Image size: 416 × 416
-Dataset configuration: defined in data.yaml
+# Training Process
+- Model: YOLOv11n (yolo11n.pt)
+- Number of epochs: 50
+- Batch size: 8
+- Image size: 416 × 416
+- Dataset configuration: defined in data.yaml
 
 
