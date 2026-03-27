@@ -36,5 +36,10 @@ A pre-trained YOLOv11n model (yolo11n.pt) was fine-tuned on a custom dataset of 
 The trained YOLOv11 model was loaded from Google Drive and used to run inference on the test images using predict(). Since no labels are available, the model directly generated bounding boxes and defect classes, and the results were saved automatically.
 - Visual Evaluation
 Predictions were compared with the original images by displaying them side by side, allowing a quick visual check of detection accuracy and localization.
+# Conclusion
+
+This project presented a complete pipeline for detecting defects in photovoltaic modules using a YOLOv11 model. The work included data preprocessing, conversion of annotations into YOLO format, model training, and inference on test images.
+The model was able to detect defects such as hotspots and diode issues and produce bounding box predictions efficiently. Visual comparisons between original and predicted images showed that the model can localize defects reasonably well.
+Future improvements could include using more data, applying data augmentation, tuning hyperparameters, and evaluating performance with quantitative metrics such as mAP.
 
 
